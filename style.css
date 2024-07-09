@@ -1,0 +1,244 @@
+@font-face {
+  font-family: 'Gistesy';
+  src: url('fonts/Gistesy.ttf') format('truetype');
+}
+
+.pc {
+  font-family: 'Gistesy', sans-serif;
+  font-size: 26px;
+  font-weight: 700;
+}
+.wimg{
+  margin-top: -85px;
+}
+.cari {
+  height: 780px;
+}
+
+.navbar-nav-center {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.pandc .carousel-caption {
+  top: 50%;
+  transform: translateY(-50%);
+  bottom: initial; /* Remove bottom to avoid interference */
+}
+
+.pandc .carousel-caption h1 {
+  font-size: 3rem;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.pandc .carousel-caption .countdown {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
+}
+
+.pandc .carousel-item {
+  position: relative;
+}
+
+.pandc .carousel-item::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5); /* Black background with 50% opacity */
+  z-index: 1;
+}
+
+.pandc .carousel-caption {
+  z-index: 2; /* Ensure the caption is above the overlay */
+}
+
+.nav-link {
+  color: white;
+  font-size: 20px;
+  font-family: monospace;
+}
+.loading-screen {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background-color: #474545;
+  background-image: url(logo-pc.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  color: #000;
+  font-weight: bold;
+  flex-direction: column;
+}
+
+.center-content {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.text-container {
+  position: absolute;
+  right: 20px;
+  text-align: right;
+  font-size: 2rem;
+  margin-left: 20px;
+}
+
+.loading-message {
+  font-size: 1.5rem;
+}
+
+.casthead {
+  text-align: center;
+  margin-top: 30px;
+  font-size: 40px;
+}
+
+.cast-row {
+  width: 75%;
+  margin: 100px auto 100px auto;
+  text-align: left;
+  line-height: 2;
+}
+
+.cast-row img {
+  width: 25%;
+  height: 35%;
+  border-radius: 10%;
+  margin: -3px 30px 30px 20px;
+}
+
+.one {
+  float: left;
+}
+
+.two {
+  float: right;
+  margin-left: 30px;
+}
+
+.gallery-section {
+  /* Blue background color */
+  padding: 50px 0; /* Adjust padding as needed */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 90%;
+  width: 80%;
+}
+
+.gallery-header {
+  text-align: center;
+  color: white; /* Text color */
+  font-size: 2.5rem; /* Font size */
+  margin-bottom: 30px; /* Space below header */
+}
+
+.gallery-section .carousel-item img {
+  width: 300px;
+  height: 400px;
+}
+
+.gallery-section .carousel-inner {
+  display: flex;
+}
+
+.gallery-section .carousel-item::after {
+  background: none;
+}
+.about1 a{
+  text-decoration: none;
+  cursor: pointer;
+}
+.about1 a:hover{
+  font-weight: bold;
+}
+.wedding{
+  display: flex;
+  justify-content: center;
+}
+.wedding img{
+  width: 220px;
+  height: 300px;
+}
+.me img{
+  width: 170px;
+}
+@media only screen and (max-width: 600px) {
+  .loading-screen {
+    background-image: url(logo-phone.png);
+  }
+  .text-container {
+    width: 100%;
+    bottom: 25px;
+    right: 50%;
+    font-size: 12px;
+    transform: translateX(50%);
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+  .loading-message{
+    font-size:12px;
+  }
+  .cari {
+    height: 250px;
+  }
+
+  .cast-row img {
+    width: 200px;
+    height: 85%;
+    border-radius: 10%;
+    margin: -3px 30px 30px 20px;
+  }
+
+  .gallery-section .carousel-item img {
+    width: 200px;
+    height: 300px;
+  }
+
+  .pandc .carousel-caption h1 {
+    font-size: 1.5rem; /* Adjust font size for small screens */
+  }
+
+  .pandc .carousel-caption .countdown {
+    font-size: 10px; /* Adjust font size for small screens */
+  }
+
+  .pandc .carousel-caption {
+    top: 50%;
+    transform: translateY(-50%);
+    bottom: initial; /* Ensure the caption is centered */
+    padding: 10px; /* Add padding for small screens */
+  }
+  .content{
+    text-align:center;
+  }
+  .wedding img{
+    width: 170px;
+    height: 250px;
+    
+  }
+  .me img{
+    width: 120px;
+  }
+  .wimg{
+    margin-top: -35px;
+  }
+  .himg{
+    margin-top: 35px
+  }
+
+}
