@@ -1,5 +1,5 @@
 function initLoadingScreen() {
-    let countdown = 3;
+    let countdown = 5; 
     const loadingMessage = document.getElementById('loading-message');
     loadingMessage.innerHTML = `Page will load in ${countdown} seconds`;
     
